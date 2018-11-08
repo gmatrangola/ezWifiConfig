@@ -1,4 +1,4 @@
-# ezWifiConfig
+# ezWifiConfig BETA
 
 Provision Wifi for headless IoT devices using a simple Android or iOS.
 
