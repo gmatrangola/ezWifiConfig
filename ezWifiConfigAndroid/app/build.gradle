@@ -1,0 +1,103 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.6'
+    }
+}
+
+apply plugin: 'com.google.protobuf'
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'idea'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://dl.bintray.com/babedev/maven" }
+}
+
+protobuf {
+    protoc {
+        // This doesn't work on Raspberry Pi because there is no protoc compiled for arm in mavencentral.
+        artifact = 'com.google.protobuf:protoc:3.5.1-1'
+        // may need to specify path if protoc isn't in the usual place.
+        // path = '/usr/wherever'
+    }
+    plugins {
+        protoble {
+            path = "${System.properties['user.home']}/tools/CodeGen-1.0-SNAPSHOT/bin/AndroidClientPlugin"
+        }
+    }
+
+    generateProtoTasks {
+        all().each { task ->
+            task.plugins {
+                protoble {}
+            }
+            task.builtins {
+                remove java // common java classes already built in the :example-api-hello
+            }
+        }
+    }
+}
+
+android {
+    sourceSets {
+        main.proto.srcDirs += "${System.properties['user.home']}/Projects/libaries/ezWifiConfig/ezWifiConfigApi/src/main/proto"
+    }
+
+
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.electrazoom.blewifisetupandroid"
+        minSdkVersion 22
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+idea {
+    module {
+        sourceDirs += file("${buildDir}/generated/source/proto/main/java")
+    }
+}
+
+dependencies {
+    implementation 'com.electrazoom.network:ezWifiConfigAPI:1.0-SNAPSHOT'
+    implementation 'com.electrazoom:LibProtoBLEAndroid:0.1-SNAPSHOT'
+    implementation 'com.electrazoom:CodeGen:1.0-SNAPSHOT'
+
+//    implementation 'org.slf4j:slf4j-api:1.7.25'
+//    implementation 'com.github.tony19:logback-android:1.1.1-11'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "com.android.support:appcompat-v7:$support_version"
+    implementation "com.android.support:design:$support_version"
+    implementation "com.android.support:recyclerview-v7:$support_version"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation 'com.github.florent37:runtime-permission-kotlin:1.0.1'
+    implementation 'com.google.guava:guava:24.1-jre'
+    implementation 'com.android.support:support-v4:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}

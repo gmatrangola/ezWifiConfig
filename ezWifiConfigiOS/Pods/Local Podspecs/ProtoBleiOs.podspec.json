@@ -1,0 +1,22 @@
+{
+  "name": "ProtoBLEiOS",
+  "version": "0.1.0",
+  "summary": "A short description of ProtoBLEiOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/geoffm@matrangola.com/ProtoBLEiOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "geoffm@matrangola.com": "geoff@matrangola.com"
+  },
+  "source": {
+    "git": "https://github.com/geoffm@matrangola.com/ProtoBLEiOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ProtoBLEiOS/Classes/**/*"
+}

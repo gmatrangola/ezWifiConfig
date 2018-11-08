@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recycler_margin_horizontal">4dp</dimen>
+    <dimen name="recycler_margin_vertical">4dp</dimen>
+    <dimen name="recycler_layout_spacing">4dp</dimen>
+    <dimen name="recycler_item_footer_height_min">48dp</dimen>
+    <dimen name="recycler_item_footer_padding">16dp</dimen>
+</resources>

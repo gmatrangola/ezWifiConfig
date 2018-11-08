@@ -1,0 +1,174 @@
+/*
+ * ezWifiConfig - Wifi Configuraiton over BLE
+ * Copyright (c) 2018. Geoffrey Matrangola, electrazoom.com
+ *
+ *     This program is free software: you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation, version 3 of the License.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <https://www.gnu.org/licenses/>
+ *
+ *     This program is also available under a commercial license. If you wish
+ *     to redistribute this library and derivative work for commercial purposes
+ *     please see ProtoBLE.com to obtain a proprietary license that will fit
+ *     your needs.
+ */
+
+syntax = "proto3";
+
+import "BleExtensions.proto";
+
+option java_package = "com.electrazoom.rpc";
+option java_outer_classname = "WifiConfig";
+
+// Represents an 802.11 Wifi Wireless Access Point
+message AccessPoint {
+    // General 802.11 flags
+    bool isPrivate = 1;
+
+    // 802.11 Infrastructure identifiers
+    string ssid = 200;
+    uint32 frequency = 201;
+    string mac = 202; // AKA HwAddress
+    uint32 maxBitrate = 203; // in Kb/s
+    uint32 strength = 204; // percentage
+    int64 timeLastSeen = 205; // standard Unix time
+
+    bool active = 300; // AP is the active connection providing wireless network communication to the system
+}
+
+// Represents a group of APs with the same SSID (Network Name) forming a typical wireless network.
+message SsidNetwork {
+    string ssid = 1;
+    bool isPrivate = 2;
+    int32 strength = 3;
+    repeated AccessPoint aps = 4;
+    bool active = 300; // One of the APs in the network is the active connection
+}
+
+// Wifi network scan results reported in networks. activeNetwork and activeAccessPoint represent the current connection
+// to the network and the AP within that network.
+message Scan {
+    repeated SsidNetwork networks = 1;
+    SsidNetwork activeNetwork = 2;
+    AccessPoint activeAccessPoint = 3;
+}
+
+// No Parameters
+message ScanRequest {
+}
+
+// Join the strongest AP on the ssid network or the ap specified
+message JoinRequest {
+    oneof connection {
+        string ssid = 1;
+        AccessPoint ap = 2;
+    }
+    string psk = 3;
+}
+
+// if isSuccessfual is fals, errorMessage will provide information regarding the error
+message JoinResult {
+    bool isSuccessful = 1;
+    string errorMessage = 2;
+}
+
+// No parameters, disconnects from all connected APs
+message DisconnectRequest {
+}
+
+// returns true if disconnection request was successful
+message DisconnectResult {
+    bool isSuccessful = 1;
+    string errorMessage = 2;
+}
+
+// System can accept a token or username and password
+message AuthenticateRequest {
+    string username = 1;
+    string password = 2;
+    string token = 3;
+}
+
+// Indicate the authentication was accepted
+message AuthenticateResult {
+    bool authenticated = 1;
+    string message = 2;
+}
+
+// Mode requested by the user or the current mode resulting change
+enum OperationMode {
+    SETUP_WIFI = 0;
+    START_SERVICE = 1;
+    STOP_SERVICE = 2;
+    RESTART_SERVICE = 3;
+    SHUTDOWN = 4;
+    REBOOT = 5;
+    DISABLE_SETUP_MODE = 6;
+    ENABLE_SETUP_MODE = 7;
+    FACTORY_RESET = 8;
+    EXECUTE_COMMAND = 9;
+}
+
+// Error or success returned when changing operating Mode
+enum OpeartingModeError {
+    SUCCESS = 0;
+    WIFI_ERROR = 1;
+    BLUETOOTH_ERROR = 2;
+    SYSTEM_ERROR = 4;
+}
+
+// Request changing the operation mode
+message OperationModeRequest {
+    OperationMode operationMode = 1;
+    string command = 2;
+}
+
+// Indicates success or failure after Operation Mode change request
+message OperationModeResult {
+    OperationMode operationMode = 1;
+    string command = 2;
+    OpeartingModeError error = 3;
+    string message = 4;
+}
+
+service WifiSetup {
+    option (app_path) = "/RemoteWifiSetup";
+    option (uuid) = "e2428c7a-abe6-4b13-a9e4-c3ce154d53c5";
+
+    // Get a list of Wireless Networks visible to the device
+    rpc getWirelessNetworks(ScanRequest) returns (Scan) {
+        option (parameter_uuid) = "777d704a-fb59-4d40-8466-83a32609e346";
+        option (return_uuid) = "46571b2e-49d3-4e07-b47f-eea0a140d1de";
+    };
+
+    // Join the SSID or Access Point in the Join Request
+    rpc join(JoinRequest) returns (JoinResult) {
+        option (parameter_uuid) = "39479211-2140-45b3-9d6c-a644b79dcb01";
+        option (return_uuid) = "4d2f2bcc-348a-423c-b4dc-03b7f94b0c7c";
+    };
+
+    // Disconnect from all Access points
+    rpc disconnect(DisconnectRequest) returns (DisconnectResult) {
+        option (parameter_uuid) = "5629f451-6e2f-466c-8737-a041820e5e16";
+        option (return_uuid) = "8382d57f-0186-44be-aa09-bfb773b5a99f";
+    };
+
+    // Allows the setup app to authenticate so that only the operator can change settings
+    rpc authenticate(AuthenticateRequest) returns (AuthenticateResult) {
+        option (parameter_uuid) = "32f67978-7f15-4eea-bc31-cc1ace51e301";
+        option (return_uuid) = "c139ab76-cfbe-4031-a2d2-08f0aeeeb6c5";
+    }
+
+    // Setup app can change modes after wifi is set up
+    rpc changeOperationMode(OperationModeRequest) returns (OperationModeResult) {
+        option (parameter_uuid) = "72dacfde-5e04-4a03-ae94-f2fbcb134b4e";
+        option (return_uuid) = "9b500504-ab1a-4a3e-908f-97aca2a33d4d";
+    }
+}

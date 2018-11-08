@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C0668D22184E60600894EA9 /* ScanningView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C0668D12184E60600894EA9 /* ScanningView.xib */; };
+		6C0668D421850BD600894EA9 /* ScanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0668D321850BD600894EA9 /* ScanningView.swift */; };
+		6CAD5843216A9ADB0034ABB6 /* Peripheral-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD583F216A9ADB0034ABB6 /* Peripheral-100.png */; };
+		6CAD5844216A9ADB0034ABB6 /* Peripheral-75.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5840216A9ADB0034ABB6 /* Peripheral-75.png */; };
+		6CAD5845216A9ADB0034ABB6 /* Peripheral-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5841216A9ADB0034ABB6 /* Peripheral-50.png */; };
+		6CAD5846216A9ADB0034ABB6 /* Peripheral-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5842216A9ADB0034ABB6 /* Peripheral-25.png */; };
+		6CAD584B216A9CAA0034ABB6 /* Wifi-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5847216A9CAA0034ABB6 /* Wifi-50.png */; };
+		6CAD584C216A9CAA0034ABB6 /* Wifi-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5848216A9CAA0034ABB6 /* Wifi-25.png */; };
+		6CAD584D216A9CAA0034ABB6 /* Wifi-75.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5849216A9CAA0034ABB6 /* Wifi-75.png */; };
+		6CAD584E216A9CAA0034ABB6 /* Wifi-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD584A216A9CAA0034ABB6 /* Wifi-100.png */; };
+		6CAD5851216AA0CF0034ABB6 /* Unlocked.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD584F216AA0CF0034ABB6 /* Unlocked.png */; };
+		6CAD5852216AA0CF0034ABB6 /* Locked.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5850216AA0CF0034ABB6 /* Locked.png */; };
+		6CAD5872216C45450034ABB6 /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5854216C45440034ABB6 /* Icon-29.png */; };
+		6CAD5873216C45450034ABB6 /* Icon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5855216C45440034ABB6 /* Icon-16.png */; };
+		6CAD5874216C45450034ABB6 /* Icon-256.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5856216C45440034ABB6 /* Icon-256.png */; };
+		6CAD5875216C45450034ABB6 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5857216C45440034ABB6 /* Icon-120.png */; };
+		6CAD5876216C45450034ABB6 /* Icon-88.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5858216C45440034ABB6 /* Icon-88.png */; };
+		6CAD5877216C45450034ABB6 /* Icon-144.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5859216C45440034ABB6 /* Icon-144.png */; };
+		6CAD5878216C45450034ABB6 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD585A216C45440034ABB6 /* Icon-76.png */; };
+		6CAD5879216C45450034ABB6 /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD585B216C45440034ABB6 /* Icon-60.png */; };
+		6CAD587A216C45450034ABB6 /* Icon-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD585C216C45440034ABB6 /* Icon-48.png */; };
+		6CAD587B216C45450034ABB6 /* Icon-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD585D216C45440034ABB6 /* Icon-1024.png */; };
+		6CAD587C216C45450034ABB6 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD585E216C45440034ABB6 /* Icon-152.png */; };
+		6CAD587D216C45450034ABB6 /* Icon-180.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD585F216C45440034ABB6 /* Icon-180.png */; };
+		6CAD587E216C45450034ABB6 /* Icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5860216C45440034ABB6 /* Icon-64.png */; };
+		6CAD587F216C45450034ABB6 /* Icon-58.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5861216C45440034ABB6 /* Icon-58.png */; };
+		6CAD5880216C45450034ABB6 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5862216C45440034ABB6 /* Icon-72.png */; };
+		6CAD5881216C45450034ABB6 /* Icon-196.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5863216C45440034ABB6 /* Icon-196.png */; };
+		6CAD5882216C45450034ABB6 /* Icon-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5864216C45440034ABB6 /* Icon-80.png */; };
+		6CAD5883216C45450034ABB6 /* Icon-57.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5865216C45440034ABB6 /* Icon-57.png */; };
+		6CAD5884216C45450034ABB6 /* Icon-55.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5866216C45440034ABB6 /* Icon-55.png */; };
+		6CAD5885216C45450034ABB6 /* Icon-172.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5867216C45440034ABB6 /* Icon-172.png */; };
+		6CAD5886216C45450034ABB6 /* Icon-167.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5868216C45440034ABB6 /* Icon-167.png */; };
+		6CAD5887216C45450034ABB6 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5869216C45440034ABB6 /* Icon-40.png */; };
+		6CAD5888216C45450034ABB6 /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD586A216C45440034ABB6 /* Icon-50.png */; };
+		6CAD5889216C45450034ABB6 /* Icon-87.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD586B216C45440034ABB6 /* Icon-87.png */; };
+		6CAD588A216C45450034ABB6 /* Icon-20.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD586C216C45440034ABB6 /* Icon-20.png */; };
+		6CAD588B216C45450034ABB6 /* Icon-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD586D216C45440034ABB6 /* Icon-128.png */; };
+		6CAD588C216C45450034ABB6 /* Icon-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD586E216C45440034ABB6 /* Icon-100.png */; };
+		6CAD588D216C45450034ABB6 /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD586F216C45440034ABB6 /* Icon-114.png */; };
+		6CAD588E216C45450034ABB6 /* Icon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5870216C45440034ABB6 /* Icon-32.png */; };
+		6CAD588F216C45450034ABB6 /* Icon-512.png in Resources */ = {isa = PBXBuildFile; fileRef = 6CAD5871216C45440034ABB6 /* Icon-512.png */; };
+		6CAD5891216EBC9A0034ABB6 /* WifiJoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD5890216EBC9A0034ABB6 /* WifiJoinViewController.swift */; };
+		6CAD58932170CF130034ABB6 /* WifiSetupDelegateDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD58922170CF130034ABB6 /* WifiSetupDelegateDispatcher.swift */; };
+		6CAD5895217187FB0034ABB6 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAD5894217187FB0034ABB6 /* UIImageExtension.swift */; };
+		6CD64B5C2161864800992D0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B5B2161864800992D0E /* AppDelegate.swift */; };
+		6CD64B5E2161864800992D0E /* CentralTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B5D2161864800992D0E /* CentralTableViewController.swift */; };
+		6CD64B612161864800992D0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD64B5F2161864800992D0E /* Main.storyboard */; };
+		6CD64B642161864800992D0E /* ezWifiConfigiOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B622161864800992D0E /* ezWifiConfigiOS.xcdatamodeld */; };
+		6CD64B662161864900992D0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD64B652161864900992D0E /* Assets.xcassets */; };
+		6CD64B692161864900992D0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD64B672161864900992D0E /* LaunchScreen.storyboard */; };
+		6CD64B742161864900992D0E /* ezWifiConfigiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B732161864900992D0E /* ezWifiConfigiOSTests.swift */; };
+		6CD64B7F2161864900992D0E /* ezWifiConfigiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B7E2161864900992D0E /* ezWifiConfigiOSUITests.swift */; };
+		6CD64B932162FCBE00992D0E /* PeripheralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B922162FCBE00992D0E /* PeripheralTableViewCell.swift */; };
+		6CD64B962163410600992D0E /* DeviceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B952163410500992D0E /* DeviceDelegate.swift */; };
+		6CD64B9A216343AA00992D0E /* WifiConfig.proto in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B99216343AA00992D0E /* WifiConfig.proto */; };
+		6CD64B9E2163458500992D0E /* WifiSetupService.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B9C2163458500992D0E /* WifiSetupService.pb.swift */; };
+		6CD64B9F2163458500992D0E /* WifiConfig.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B9D2163458500992D0E /* WifiConfig.pb.swift */; };
+		6CD64BA721634B8E00992D0E /* WifiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64BA621634B8E00992D0E /* WifiTableViewController.swift */; };
+		6CD64BA921634E7A00992D0E /* WifiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64BA821634E7A00992D0E /* WifiTableViewCell.swift */; };
+		92DCBE9B15EE6B1C3C0E3B42 /* Pods_ezWifiConfigiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285D523AEE654E7527F5CDB4 /* Pods_ezWifiConfigiOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CD64B702161864900992D0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CD64B502161864800992D0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CD64B572161864800992D0E;
+			remoteInfo = ezWifiConfigiOS;
+		};
+		6CD64B7B2161864900992D0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CD64B502161864800992D0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CD64B572161864800992D0E;
+			remoteInfo = ezWifiConfigiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6CD64B912162E80F00992D0E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		285D523AEE654E7527F5CDB4 /* Pods_ezWifiConfigiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezWifiConfigiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42D7F97B61F8C2A78EAD333A /* Pods-ezWifiConfigiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezWifiConfigiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezWifiConfigiOS/Pods-ezWifiConfigiOS.release.xcconfig"; sourceTree = "<group>"; };
+		6C0668D12184E60600894EA9 /* ScanningView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScanningView.xib; sourceTree = "<group>"; };
+		6C0668D321850BD600894EA9 /* ScanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningView.swift; sourceTree = "<group>"; };
+		6CAD583F216A9ADB0034ABB6 /* Peripheral-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Peripheral-100.png"; sourceTree = "<group>"; };
+		6CAD5840216A9ADB0034ABB6 /* Peripheral-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Peripheral-75.png"; sourceTree = "<group>"; };
+		6CAD5841216A9ADB0034ABB6 /* Peripheral-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Peripheral-50.png"; sourceTree = "<group>"; };
+		6CAD5842216A9ADB0034ABB6 /* Peripheral-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Peripheral-25.png"; sourceTree = "<group>"; };
+		6CAD5847216A9CAA0034ABB6 /* Wifi-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wifi-50.png"; sourceTree = "<group>"; };
+		6CAD5848216A9CAA0034ABB6 /* Wifi-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wifi-25.png"; sourceTree = "<group>"; };
+		6CAD5849216A9CAA0034ABB6 /* Wifi-75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wifi-75.png"; sourceTree = "<group>"; };
+		6CAD584A216A9CAA0034ABB6 /* Wifi-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Wifi-100.png"; sourceTree = "<group>"; };
+		6CAD584F216AA0CF0034ABB6 /* Unlocked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unlocked.png; sourceTree = "<group>"; };
+		6CAD5850216AA0CF0034ABB6 /* Locked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Locked.png; sourceTree = "<group>"; };
+		6CAD5854216C45440034ABB6 /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
+		6CAD5855216C45440034ABB6 /* Icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-16.png"; sourceTree = "<group>"; };
+		6CAD5856216C45440034ABB6 /* Icon-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-256.png"; sourceTree = "<group>"; };
+		6CAD5857216C45440034ABB6 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-120.png"; sourceTree = "<group>"; };
+		6CAD5858216C45440034ABB6 /* Icon-88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-88.png"; sourceTree = "<group>"; };
+		6CAD5859216C45440034ABB6 /* Icon-144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-144.png"; sourceTree = "<group>"; };
+		6CAD585A216C45440034ABB6 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-76.png"; sourceTree = "<group>"; };
+		6CAD585B216C45440034ABB6 /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60.png"; sourceTree = "<group>"; };
+		6CAD585C216C45440034ABB6 /* Icon-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-48.png"; sourceTree = "<group>"; };
+		6CAD585D216C45440034ABB6 /* Icon-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-1024.png"; sourceTree = "<group>"; };
+		6CAD585E216C45440034ABB6 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-152.png"; sourceTree = "<group>"; };
+		6CAD585F216C45440034ABB6 /* Icon-180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-180.png"; sourceTree = "<group>"; };
+		6CAD5860216C45440034ABB6 /* Icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-64.png"; sourceTree = "<group>"; };
+		6CAD5861216C45440034ABB6 /* Icon-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-58.png"; sourceTree = "<group>"; };
+		6CAD5862216C45440034ABB6 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		6CAD5863216C45440034ABB6 /* Icon-196.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-196.png"; sourceTree = "<group>"; };
+		6CAD5864216C45440034ABB6 /* Icon-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-80.png"; sourceTree = "<group>"; };
+		6CAD5865216C45440034ABB6 /* Icon-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-57.png"; sourceTree = "<group>"; };
+		6CAD5866216C45440034ABB6 /* Icon-55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-55.png"; sourceTree = "<group>"; };
+		6CAD5867216C45440034ABB6 /* Icon-172.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-172.png"; sourceTree = "<group>"; };
+		6CAD5868216C45440034ABB6 /* Icon-167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-167.png"; sourceTree = "<group>"; };
+		6CAD5869216C45440034ABB6 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
+		6CAD586A216C45440034ABB6 /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		6CAD586B216C45440034ABB6 /* Icon-87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-87.png"; sourceTree = "<group>"; };
+		6CAD586C216C45440034ABB6 /* Icon-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-20.png"; sourceTree = "<group>"; };
+		6CAD586D216C45440034ABB6 /* Icon-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-128.png"; sourceTree = "<group>"; };
+		6CAD586E216C45440034ABB6 /* Icon-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-100.png"; sourceTree = "<group>"; };
+		6CAD586F216C45440034ABB6 /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
+		6CAD5870216C45440034ABB6 /* Icon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-32.png"; sourceTree = "<group>"; };
+		6CAD5871216C45440034ABB6 /* Icon-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-512.png"; sourceTree = "<group>"; };
+		6CAD5890216EBC9A0034ABB6 /* WifiJoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiJoinViewController.swift; sourceTree = "<group>"; };
+		6CAD58922170CF130034ABB6 /* WifiSetupDelegateDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiSetupDelegateDispatcher.swift; sourceTree = "<group>"; };
+		6CAD5894217187FB0034ABB6 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		6CD64B582161864800992D0E /* ezWifiConfigiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ezWifiConfigiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD64B5B2161864800992D0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CD64B5D2161864800992D0E /* CentralTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralTableViewController.swift; sourceTree = "<group>"; };
+		6CD64B602161864800992D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CD64B632161864800992D0E /* ezWifiConfigiOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ezWifiConfigiOS.xcdatamodel; sourceTree = "<group>"; };
+		6CD64B652161864900992D0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CD64B682161864900992D0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CD64B6A2161864900992D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CD64B6F2161864900992D0E /* ezWifiConfigiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ezWifiConfigiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD64B732161864900992D0E /* ezWifiConfigiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ezWifiConfigiOSTests.swift; sourceTree = "<group>"; };
+		6CD64B752161864900992D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CD64B7A2161864900992D0E /* ezWifiConfigiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ezWifiConfigiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD64B7E2161864900992D0E /* ezWifiConfigiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ezWifiConfigiOSUITests.swift; sourceTree = "<group>"; };
+		6CD64B802161864900992D0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CD64B922162FCBE00992D0E /* PeripheralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeripheralTableViewCell.swift; sourceTree = "<group>"; };
+		6CD64B952163410500992D0E /* DeviceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceDelegate.swift; sourceTree = "<group>"; };
+		6CD64B97216341AA00992D0E /* GenerateProto.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = GenerateProto.sh; sourceTree = "<group>"; };
+		6CD64B99216343AA00992D0E /* WifiConfig.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.protobuf; path = WifiConfig.proto; sourceTree = "<group>"; };
+		6CD64B9C2163458500992D0E /* WifiSetupService.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiSetupService.pb.swift; sourceTree = "<group>"; };
+		6CD64B9D2163458500992D0E /* WifiConfig.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiConfig.pb.swift; sourceTree = "<group>"; };
+		6CD64BA621634B8E00992D0E /* WifiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiTableViewController.swift; sourceTree = "<group>"; };
+		6CD64BA821634E7A00992D0E /* WifiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiTableViewCell.swift; sourceTree = "<group>"; };
+		A77DC0365A21B754AD33178B /* Pods-ezWifiConfigiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezWifiConfigiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezWifiConfigiOS/Pods-ezWifiConfigiOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CD64B552161864800992D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92DCBE9B15EE6B1C3C0E3B42 /* Pods_ezWifiConfigiOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CD64B6C2161864900992D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CD64B772161864900992D0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AF0B2F845938FC10E097F64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A77DC0365A21B754AD33178B /* Pods-ezWifiConfigiOS.debug.xcconfig */,
+				42D7F97B61F8C2A78EAD333A /* Pods-ezWifiConfigiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2C4F7DC760EDDDC6439F753A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				285D523AEE654E7527F5CDB4 /* Pods_ezWifiConfigiOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CAD583E216A9ADB0034ABB6 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD5853216C45440034ABB6 /* AppIcon */,
+				6CAD5850216AA0CF0034ABB6 /* Locked.png */,
+				6CAD584F216AA0CF0034ABB6 /* Unlocked.png */,
+				6CAD5848216A9CAA0034ABB6 /* Wifi-25.png */,
+				6CAD5847216A9CAA0034ABB6 /* Wifi-50.png */,
+				6CAD5849216A9CAA0034ABB6 /* Wifi-75.png */,
+				6CAD584A216A9CAA0034ABB6 /* Wifi-100.png */,
+				6CAD583F216A9ADB0034ABB6 /* Peripheral-100.png */,
+				6CAD5840216A9ADB0034ABB6 /* Peripheral-75.png */,
+				6CAD5841216A9ADB0034ABB6 /* Peripheral-50.png */,
+				6CAD5842216A9ADB0034ABB6 /* Peripheral-25.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		6CAD5853216C45440034ABB6 /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD5854216C45440034ABB6 /* Icon-29.png */,
+				6CAD5855216C45440034ABB6 /* Icon-16.png */,
+				6CAD5856216C45440034ABB6 /* Icon-256.png */,
+				6CAD5857216C45440034ABB6 /* Icon-120.png */,
+				6CAD5858216C45440034ABB6 /* Icon-88.png */,
+				6CAD5859216C45440034ABB6 /* Icon-144.png */,
+				6CAD585A216C45440034ABB6 /* Icon-76.png */,
+				6CAD585B216C45440034ABB6 /* Icon-60.png */,
+				6CAD585C216C45440034ABB6 /* Icon-48.png */,
+				6CAD585D216C45440034ABB6 /* Icon-1024.png */,
+				6CAD585E216C45440034ABB6 /* Icon-152.png */,
+				6CAD585F216C45440034ABB6 /* Icon-180.png */,
+				6CAD5860216C45440034ABB6 /* Icon-64.png */,
+				6CAD5861216C45440034ABB6 /* Icon-58.png */,
+				6CAD5862216C45440034ABB6 /* Icon-72.png */,
+				6CAD5863216C45440034ABB6 /* Icon-196.png */,
+				6CAD5864216C45440034ABB6 /* Icon-80.png */,
+				6CAD5865216C45440034ABB6 /* Icon-57.png */,
+				6CAD5866216C45440034ABB6 /* Icon-55.png */,
+				6CAD5867216C45440034ABB6 /* Icon-172.png */,
+				6CAD5868216C45440034ABB6 /* Icon-167.png */,
+				6CAD5869216C45440034ABB6 /* Icon-40.png */,
+				6CAD586A216C45440034ABB6 /* Icon-50.png */,
+				6CAD586B216C45440034ABB6 /* Icon-87.png */,
+				6CAD586C216C45440034ABB6 /* Icon-20.png */,
+				6CAD586D216C45440034ABB6 /* Icon-128.png */,
+				6CAD586E216C45440034ABB6 /* Icon-100.png */,
+				6CAD586F216C45440034ABB6 /* Icon-114.png */,
+				6CAD5870216C45440034ABB6 /* Icon-32.png */,
+				6CAD5871216C45440034ABB6 /* Icon-512.png */,
+			);
+			path = AppIcon;
+			sourceTree = "<group>";
+		};
+		6CD64B4F2161864800992D0E = {
+			isa = PBXGroup;
+			children = (
+				6CAD583E216A9ADB0034ABB6 /* Icons */,
+				6CD64B8C2162E7FF00992D0E /* Libs */,
+				6CD64B5A2161864800992D0E /* ezWifiConfigiOS */,
+				6CD64B722161864900992D0E /* ezWifiConfigiOSTests */,
+				6CD64B7D2161864900992D0E /* ezWifiConfigiOSUITests */,
+				6CD64B592161864800992D0E /* Products */,
+				1AF0B2F845938FC10E097F64 /* Pods */,
+				2C4F7DC760EDDDC6439F753A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6CD64B592161864800992D0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CD64B582161864800992D0E /* ezWifiConfigiOS.app */,
+				6CD64B6F2161864900992D0E /* ezWifiConfigiOSTests.xctest */,
+				6CD64B7A2161864900992D0E /* ezWifiConfigiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CD64B5A2161864800992D0E /* ezWifiConfigiOS */ = {
+			isa = PBXGroup;
+			children = (
+				6CD64B9B216344B400992D0E /* Generated */,
+				6CD64B982163437A00992D0E /* Proto */,
+				6CD64B97216341AA00992D0E /* GenerateProto.sh */,
+				6CD64B9421633F6A00992D0E /* Classes */,
+				6CD64B5F2161864800992D0E /* Main.storyboard */,
+				6C0668D12184E60600894EA9 /* ScanningView.xib */,
+				6CD64B652161864900992D0E /* Assets.xcassets */,
+				6CD64B672161864900992D0E /* LaunchScreen.storyboard */,
+				6CD64B6A2161864900992D0E /* Info.plist */,
+				6CD64B622161864800992D0E /* ezWifiConfigiOS.xcdatamodeld */,
+			);
+			path = ezWifiConfigiOS;
+			sourceTree = "<group>";
+		};
+		6CD64B722161864900992D0E /* ezWifiConfigiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CD64B732161864900992D0E /* ezWifiConfigiOSTests.swift */,
+				6CD64B752161864900992D0E /* Info.plist */,
+			);
+			path = ezWifiConfigiOSTests;
+			sourceTree = "<group>";
+		};
+		6CD64B7D2161864900992D0E /* ezWifiConfigiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CD64B7E2161864900992D0E /* ezWifiConfigiOSUITests.swift */,
+				6CD64B802161864900992D0E /* Info.plist */,
+			);
+			path = ezWifiConfigiOSUITests;
+			sourceTree = "<group>";
+		};
+		6CD64B8C2162E7FF00992D0E /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		6CD64B9421633F6A00992D0E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6CD64B5B2161864800992D0E /* AppDelegate.swift */,
+				6CD64B952163410500992D0E /* DeviceDelegate.swift */,
+				6CD64B5D2161864800992D0E /* CentralTableViewController.swift */,
+				6CD64B922162FCBE00992D0E /* PeripheralTableViewCell.swift */,
+				6CD64BA621634B8E00992D0E /* WifiTableViewController.swift */,
+				6CD64BA821634E7A00992D0E /* WifiTableViewCell.swift */,
+				6CAD5890216EBC9A0034ABB6 /* WifiJoinViewController.swift */,
+				6CAD58922170CF130034ABB6 /* WifiSetupDelegateDispatcher.swift */,
+				6CAD5894217187FB0034ABB6 /* UIImageExtension.swift */,
+				6C0668D321850BD600894EA9 /* ScanningView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6CD64B982163437A00992D0E /* Proto */ = {
+			isa = PBXGroup;
+			children = (
+				6CD64B99216343AA00992D0E /* WifiConfig.proto */,
+			);
+			path = Proto;
+			sourceTree = "<group>";
+		};
+		6CD64B9B216344B400992D0E /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				6CD64B9D2163458500992D0E /* WifiConfig.pb.swift */,
+				6CD64B9C2163458500992D0E /* WifiSetupService.pb.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CD64B572161864800992D0E /* ezWifiConfigiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CD64B832161864900992D0E /* Build configuration list for PBXNativeTarget "ezWifiConfigiOS" */;
+			buildPhases = (
+				F944BE8B0736045EA636502A /* [CP] Check Pods Manifest.lock */,
+				6CD64B542161864800992D0E /* Sources */,
+				6CD64B552161864800992D0E /* Frameworks */,
+				6CD64B562161864800992D0E /* Resources */,
+				6CD64B912162E80F00992D0E /* Embed Frameworks */,
+				36DF4C5E1A04E99A3E1F025D /* [CP] Embed Pods Frameworks */,
+				9048C24DFFBC7338230CC4A5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ezWifiConfigiOS;
+			productName = ezWifiConfigiOS;
+			productReference = 6CD64B582161864800992D0E /* ezWifiConfigiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CD64B6E2161864900992D0E /* ezWifiConfigiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CD64B862161864900992D0E /* Build configuration list for PBXNativeTarget "ezWifiConfigiOSTests" */;
+			buildPhases = (
+				6CD64B6B2161864900992D0E /* Sources */,
+				6CD64B6C2161864900992D0E /* Frameworks */,
+				6CD64B6D2161864900992D0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CD64B712161864900992D0E /* PBXTargetDependency */,
+			);
+			name = ezWifiConfigiOSTests;
+			productName = ezWifiConfigiOSTests;
+			productReference = 6CD64B6F2161864900992D0E /* ezWifiConfigiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CD64B792161864900992D0E /* ezWifiConfigiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CD64B892161864900992D0E /* Build configuration list for PBXNativeTarget "ezWifiConfigiOSUITests" */;
+			buildPhases = (
+				6CD64B762161864900992D0E /* Sources */,
+				6CD64B772161864900992D0E /* Frameworks */,
+				6CD64B782161864900992D0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CD64B7C2161864900992D0E /* PBXTargetDependency */,
+			);
+			name = ezWifiConfigiOSUITests;
+			productName = ezWifiConfigiOSUITests;
+			productReference = 6CD64B7A2161864900992D0E /* ezWifiConfigiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CD64B502161864800992D0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = ezsmartdevices.com;
+				TargetAttributes = {
+					6CD64B572161864800992D0E = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					6CD64B6E2161864900992D0E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6CD64B572161864800992D0E;
+					};
+					6CD64B792161864900992D0E = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 6CD64B572161864800992D0E;
+					};
+				};
+			};
+			buildConfigurationList = 6CD64B532161864800992D0E /* Build configuration list for PBXProject "ezWifiConfigiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CD64B4F2161864800992D0E;
+			productRefGroup = 6CD64B592161864800992D0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CD64B572161864800992D0E /* ezWifiConfigiOS */,
+				6CD64B6E2161864900992D0E /* ezWifiConfigiOSTests */,
+				6CD64B792161864900992D0E /* ezWifiConfigiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CD64B562161864800992D0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CAD5881216C45450034ABB6 /* Icon-196.png in Resources */,
+				6CAD5885216C45450034ABB6 /* Icon-172.png in Resources */,
+				6CD64B692161864900992D0E /* LaunchScreen.storyboard in Resources */,
+				6CAD5886216C45450034ABB6 /* Icon-167.png in Resources */,
+				6CD64B662161864900992D0E /* Assets.xcassets in Resources */,
+				6CAD5874216C45450034ABB6 /* Icon-256.png in Resources */,
+				6CAD5875216C45450034ABB6 /* Icon-120.png in Resources */,
+				6CAD587A216C45450034ABB6 /* Icon-48.png in Resources */,
+				6CAD5880216C45450034ABB6 /* Icon-72.png in Resources */,
+				6CAD588D216C45450034ABB6 /* Icon-114.png in Resources */,
+				6CAD587F216C45450034ABB6 /* Icon-58.png in Resources */,
+				6CAD5845216A9ADB0034ABB6 /* Peripheral-50.png in Resources */,
+				6CAD5879216C45450034ABB6 /* Icon-60.png in Resources */,
+				6C0668D22184E60600894EA9 /* ScanningView.xib in Resources */,
+				6CAD587B216C45450034ABB6 /* Icon-1024.png in Resources */,
+				6CD64B612161864800992D0E /* Main.storyboard in Resources */,
+				6CAD584D216A9CAA0034ABB6 /* Wifi-75.png in Resources */,
+				6CAD5852216AA0CF0034ABB6 /* Locked.png in Resources */,
+				6CAD588B216C45450034ABB6 /* Icon-128.png in Resources */,
+				6CAD588F216C45450034ABB6 /* Icon-512.png in Resources */,
+				6CAD5883216C45450034ABB6 /* Icon-57.png in Resources */,
+				6CAD584C216A9CAA0034ABB6 /* Wifi-25.png in Resources */,
+				6CAD587E216C45450034ABB6 /* Icon-64.png in Resources */,
+				6CAD5872216C45450034ABB6 /* Icon-29.png in Resources */,
+				6CAD587C216C45450034ABB6 /* Icon-152.png in Resources */,
+				6CAD5843216A9ADB0034ABB6 /* Peripheral-100.png in Resources */,
+				6CAD5877216C45450034ABB6 /* Icon-144.png in Resources */,
+				6CAD5846216A9ADB0034ABB6 /* Peripheral-25.png in Resources */,
+				6CAD5887216C45450034ABB6 /* Icon-40.png in Resources */,
+				6CAD5851216AA0CF0034ABB6 /* Unlocked.png in Resources */,
+				6CAD5844216A9ADB0034ABB6 /* Peripheral-75.png in Resources */,
+				6CAD588E216C45450034ABB6 /* Icon-32.png in Resources */,
+				6CAD5876216C45450034ABB6 /* Icon-88.png in Resources */,
+				6CAD584E216A9CAA0034ABB6 /* Wifi-100.png in Resources */,
+				6CAD5888216C45450034ABB6 /* Icon-50.png in Resources */,
+				6CAD5878216C45450034ABB6 /* Icon-76.png in Resources */,
+				6CAD5882216C45450034ABB6 /* Icon-80.png in Resources */,
+				6CAD584B216A9CAA0034ABB6 /* Wifi-50.png in Resources */,
+				6CAD587D216C45450034ABB6 /* Icon-180.png in Resources */,
+				6CAD5884216C45450034ABB6 /* Icon-55.png in Resources */,
+				6CAD5889216C45450034ABB6 /* Icon-87.png in Resources */,
+				6CAD588A216C45450034ABB6 /* Icon-20.png in Resources */,
+				6CAD588C216C45450034ABB6 /* Icon-100.png in Resources */,
+				6CAD5873216C45450034ABB6 /* Icon-16.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CD64B6D2161864900992D0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CD64B782161864900992D0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36DF4C5E1A04E99A3E1F025D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ezWifiConfigiOS/Pods-ezWifiConfigiOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ProtoBLEiOS/ProtoBLEiOS.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftProtobuf/SwiftProtobuf.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoBLEiOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftProtobuf.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezWifiConfigiOS/Pods-ezWifiConfigiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9048C24DFFBC7338230CC4A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezWifiConfigiOS/Pods-ezWifiConfigiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F944BE8B0736045EA636502A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ezWifiConfigiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CD64B542161864800992D0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CD64B962163410600992D0E /* DeviceDelegate.swift in Sources */,
+				6CAD5891216EBC9A0034ABB6 /* WifiJoinViewController.swift in Sources */,
+				6CD64B9A216343AA00992D0E /* WifiConfig.proto in Sources */,
+				6CD64BA921634E7A00992D0E /* WifiTableViewCell.swift in Sources */,
+				6CD64B642161864800992D0E /* ezWifiConfigiOS.xcdatamodeld in Sources */,
+				6CD64B9F2163458500992D0E /* WifiConfig.pb.swift in Sources */,
+				6CD64B932162FCBE00992D0E /* PeripheralTableViewCell.swift in Sources */,
+				6CD64B5E2161864800992D0E /* CentralTableViewController.swift in Sources */,
+				6CD64B5C2161864800992D0E /* AppDelegate.swift in Sources */,
+				6C0668D421850BD600894EA9 /* ScanningView.swift in Sources */,
+				6CAD5895217187FB0034ABB6 /* UIImageExtension.swift in Sources */,
+				6CD64B9E2163458500992D0E /* WifiSetupService.pb.swift in Sources */,
+				6CAD58932170CF130034ABB6 /* WifiSetupDelegateDispatcher.swift in Sources */,
+				6CD64BA721634B8E00992D0E /* WifiTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CD64B6B2161864900992D0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CD64B742161864900992D0E /* ezWifiConfigiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CD64B762161864900992D0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CD64B7F2161864900992D0E /* ezWifiConfigiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CD64B712161864900992D0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CD64B572161864800992D0E /* ezWifiConfigiOS */;
+			targetProxy = 6CD64B702161864900992D0E /* PBXContainerItemProxy */;
+		};
+		6CD64B7C2161864900992D0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CD64B572161864800992D0E /* ezWifiConfigiOS */;
+			targetProxy = 6CD64B7B2161864900992D0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CD64B5F2161864800992D0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CD64B602161864800992D0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CD64B672161864900992D0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CD64B682161864900992D0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CD64B812161864900992D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CD64B822161864900992D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CD64B842161864900992D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A77DC0365A21B754AD33178B /* Pods-ezWifiConfigiOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				INFOPLIST_FILE = ezWifiConfigiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezsmartdevices.ezWifiConfigiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CD64B852161864900992D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42D7F97B61F8C2A78EAD333A /* Pods-ezWifiConfigiOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				INFOPLIST_FILE = ezWifiConfigiOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezsmartdevices.ezWifiConfigiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CD64B872161864900992D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EX6456FA66;
+				INFOPLIST_FILE = ezWifiConfigiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezsmartdevices.ezWifiConfigiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ezWifiConfigiOS.app/ezWifiConfigiOS";
+			};
+			name = Debug;
+		};
+		6CD64B882161864900992D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EX6456FA66;
+				INFOPLIST_FILE = ezWifiConfigiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezsmartdevices.ezWifiConfigiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ezWifiConfigiOS.app/ezWifiConfigiOS";
+			};
+			name = Release;
+		};
+		6CD64B8A2161864900992D0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EX6456FA66;
+				INFOPLIST_FILE = ezWifiConfigiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezsmartdevices.ezWifiConfigiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ezWifiConfigiOS;
+			};
+			name = Debug;
+		};
+		6CD64B8B2161864900992D0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EX6456FA66;
+				INFOPLIST_FILE = ezWifiConfigiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ezsmartdevices.ezWifiConfigiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ezWifiConfigiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CD64B532161864800992D0E /* Build configuration list for PBXProject "ezWifiConfigiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CD64B812161864900992D0E /* Debug */,
+				6CD64B822161864900992D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CD64B832161864900992D0E /* Build configuration list for PBXNativeTarget "ezWifiConfigiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CD64B842161864900992D0E /* Debug */,
+				6CD64B852161864900992D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CD64B862161864900992D0E /* Build configuration list for PBXNativeTarget "ezWifiConfigiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CD64B872161864900992D0E /* Debug */,
+				6CD64B882161864900992D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CD64B892161864900992D0E /* Build configuration list for PBXNativeTarget "ezWifiConfigiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CD64B8A2161864900992D0E /* Debug */,
+				6CD64B8B2161864900992D0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6CD64B622161864800992D0E /* ezWifiConfigiOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6CD64B632161864800992D0E /* ezWifiConfigiOS.xcdatamodel */,
+			);
+			currentVersion = 6CD64B632161864800992D0E /* ezWifiConfigiOS.xcdatamodel */;
+			path = ezWifiConfigiOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6CD64B502161864800992D0E /* Project object */;
+}

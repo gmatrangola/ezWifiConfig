@@ -1,0 +1,6 @@
+framework module Pods_ezWifiConfigiOS {
+  umbrella header "Pods-ezWifiConfigiOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

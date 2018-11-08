@@ -1,0 +1,73 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
+    dependencies {
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.4'
+    }
+}
+
+apply plugin: 'java-library'
+apply plugin: 'com.google.protobuf'
+apply plugin: 'idea'
+apply plugin: 'maven'
+
+group 'com.electrazoom.network'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+protobuf {
+    protoc {
+        // This doesn't work on Raspberry Pi because there is no protoc compiled for arm in mavencentral.
+        //artifact = 'com.google.protobuf:protoc:3.5.1-1'
+        // may need to specify path if protoc isn't in the usual place.
+        path = '/usr/local/bin/protoc'
+    }
+    plugins {
+        common {
+            // :~/tools$ unzip /home/geoff/Projects/libaries/proto-ble/codegen/build/distributions/codegen-1.0-SNAPSHOT.zip
+            path = "${System.properties['user.home']}/tools/CodeGen-1.0-SNAPSHOT/bin/CodeGen"
+        }
+    }
+
+    generateProtoTasks {
+        all().each { task ->
+            task.plugins {
+                common {}
+            }
+        }
+    }
+}
+
+idea {
+    module {
+        sourceDirs += file("${buildDir}/generated/source/proto/main/java")
+    }
+}
+
+jar {
+    manifest {
+        attributes('Implementation-Title': project.name,
+                'Implementation-Version': project.version)
+    }
+}
+
+//task serverInstall(type: CreateStartScripts) {
+//    mainClassName = 'com.ezsmartdevices.remote.WifiSetupServer'
+//    applicationName = 'ezWifiConfig'
+//    classpath = startScripts.classpath
+//    outputDir = startScripts.outputDir
+//}
+
+dependencies {
+    api group: 'com.google.protobuf', name: 'protobuf-java', version: '3.5.1'
+    implementation 'com.electrazoom:CodeGen:1.0-SNAPSHOT'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
