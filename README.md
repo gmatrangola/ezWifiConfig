@@ -50,6 +50,10 @@ Set up the ezWifiConfigLinux script to run as a Linux service however it makes s
 
 ### iOS
 
+Make sure that the [ProtoBLE](https://github.com/gmatrangola/ProtoBLE/tree/master/ProtoBLEiOS) Project is at the same toplevel as the parent ezWifiConfig project in your directory structure. So that `../../ProtoBle/ProtoBLEiOS` is the path found on the Podfile's `pod` reference.
+
+Run `pod install` in the `ezWifiConfig/ezWifiConfigiOS` directory.
+
 Load the ProtoBLEiOS libarary into XCode, set up your Developer Certificate and Launch on a real iOS device. Note that BLE does not work in the emulator.
 
 Use the example App or include the library into your own iOS setup App.
