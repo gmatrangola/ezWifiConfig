@@ -1,4 +1,4 @@
-# ezWifiConfig
+# ezWifiConfig BETA
 
 Provision Wifi for headless IoT devices using a simple Android or iOS.
 
@@ -17,7 +17,7 @@ Note that ezWfifiConfigAPI and ezWifiConfigLinux are subprojects of this directo
 
 ## Building
 
-Install ProtoBLE libraries and Code Generator - See https://github.com/electrazoom/ProtoBLE
+Install ProtoBLE libraries and Code Generator - See https://github.com/gmatrangola/ProtoBLE
 
 ### Linux
 
