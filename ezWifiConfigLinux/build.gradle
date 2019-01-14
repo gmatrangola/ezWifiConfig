@@ -55,7 +55,7 @@ sourceSets {
     main {
         proto {
             // srcDir "${project(':ezNetConfigAPI').projectDir}/src/main/proto"
-            srcDir "${project(':ezWifiConfigApi').projectDir}/src/main/proto"
+            srcDir "${project(':ezWifiConfigAPI').projectDir}/src/main/proto"
         }
     }
 }
@@ -68,7 +68,7 @@ idea {
 
 
 dependencies {
-    api project(':ezWifiConfigApi')
+    api project(':ezWifiConfigAPI')
     api group: 'com.google.protobuf', name: 'protobuf-java', version: '3.5.1'
     implementation 'com.electrazoom:CodeGen:1.0-SNAPSHOT'
 
