@@ -1,11 +1,11 @@
 {
   "name": "ProtoBLEiOS",
   "version": "0.1.0",
-  "summary": "A short description of ProtoBLEiOS.",
+  "summary": "Protobuf messages over BLE between iOS, Android and Embedded Linux",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/geoffm@matrangola.com/ProtoBLEiOS",
+  "homepage": "http://ProtoBLE.com",
   "license": {
-    "type": "MIT",
+    "type": "GPL",
     "file": "LICENSE"
   },
   "authors": {

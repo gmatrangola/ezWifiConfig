@@ -3,17 +3,21 @@ PODS:
   - SwiftProtobuf (1.1.1)
 
 DEPENDENCIES:
-  - ProtoBLEiOS (from `../proto-ble/ProtoBLEiOS`)
+  - ProtoBLEiOS (from `../../ProtoBle/ProtoBLEiOS`)
   - SwiftProtobuf (~> 1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SwiftProtobuf
 
 EXTERNAL SOURCES:
   ProtoBLEiOS:
-    :path: ../proto-ble/ProtoBLEiOS
+    :path: "../../ProtoBle/ProtoBLEiOS"
 
 SPEC CHECKSUMS:
-  ProtoBLEiOS: 225e8455d57d6e94c1355823d409643db28bd85d
+  ProtoBLEiOS: e239ca95b85a5a48fb517ae72861bd26522daca5
   SwiftProtobuf: 4298b0b814dd49031c3218fdfb8d42f7107c8a6d
 
-PODFILE CHECKSUM: 400c5d7d401af1d398dfce48dc71786f87d99d96
+PODFILE CHECKSUM: fe9794b7162cfe30ee86df3ed27f186dbf85ce01
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

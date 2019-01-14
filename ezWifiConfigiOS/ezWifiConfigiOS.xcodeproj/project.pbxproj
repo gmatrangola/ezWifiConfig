@@ -384,7 +384,6 @@
 				6CD64B562161864800992D0E /* Resources */,
 				6CD64B912162E80F00992D0E /* Embed Frameworks */,
 				36DF4C5E1A04E99A3E1F025D /* [CP] Embed Pods Frameworks */,
-				9048C24DFFBC7338230CC4A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -561,21 +560,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezWifiConfigiOS/Pods-ezWifiConfigiOS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9048C24DFFBC7338230CC4A5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezWifiConfigiOS/Pods-ezWifiConfigiOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F944BE8B0736045EA636502A /* [CP] Check Pods Manifest.lock */ = {

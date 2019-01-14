@@ -4,7 +4,7 @@ This application makes use of the following third party libraries:
 ## ProtoBLEiOS
 
 ProtoBLE - Protobuf RPC over Bluetooth Low Energy
- Copyright (c) 2018. Geoffrey Matrangola, ezSmartDevices, LLC
+ Copyright (c) 2018. Geoffrey Matrangola, electrazoom.com
 
      This program is free software: you can redistribute it and/or modify
      it under the terms of the GNU General Public License as published by
