@@ -67,6 +67,7 @@
 		6CD64B9F2163458500992D0E /* WifiConfig.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64B9D2163458500992D0E /* WifiConfig.pb.swift */; };
 		6CD64BA721634B8E00992D0E /* WifiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64BA621634B8E00992D0E /* WifiTableViewController.swift */; };
 		6CD64BA921634E7A00992D0E /* WifiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD64BA821634E7A00992D0E /* WifiTableViewCell.swift */; };
+		6CF85D3B21ED563000326147 /* ezWifiConfigiOS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 6CF85D3A21ED563000326147 /* ezWifiConfigiOS.podspec */; };
 		92DCBE9B15EE6B1C3C0E3B42 /* Pods_ezWifiConfigiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 285D523AEE654E7527F5CDB4 /* Pods_ezWifiConfigiOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -170,6 +171,7 @@
 		6CD64B9D2163458500992D0E /* WifiConfig.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WifiConfig.pb.swift; sourceTree = "<group>"; };
 		6CD64BA621634B8E00992D0E /* WifiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiTableViewController.swift; sourceTree = "<group>"; };
 		6CD64BA821634E7A00992D0E /* WifiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WifiTableViewCell.swift; sourceTree = "<group>"; };
+		6CF85D3A21ED563000326147 /* ezWifiConfigiOS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ezWifiConfigiOS.podspec; sourceTree = "<group>"; };
 		A77DC0365A21B754AD33178B /* Pods-ezWifiConfigiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezWifiConfigiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezWifiConfigiOS/Pods-ezWifiConfigiOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -274,6 +276,7 @@
 		6CD64B4F2161864800992D0E = {
 			isa = PBXGroup;
 			children = (
+				6CF85D3A21ED563000326147 /* ezWifiConfigiOS.podspec */,
 				6CAD583E216A9ADB0034ABB6 /* Icons */,
 				6CD64B8C2162E7FF00992D0E /* Libs */,
 				6CD64B5A2161864800992D0E /* ezWifiConfigiOS */,
@@ -489,6 +492,7 @@
 				6CAD5880216C45450034ABB6 /* Icon-72.png in Resources */,
 				6CAD588D216C45450034ABB6 /* Icon-114.png in Resources */,
 				6CAD587F216C45450034ABB6 /* Icon-58.png in Resources */,
+				6CF85D3B21ED563000326147 /* ezWifiConfigiOS.podspec in Resources */,
 				6CAD5845216A9ADB0034ABB6 /* Peripheral-50.png in Resources */,
 				6CAD5879216C45450034ABB6 /* Icon-60.png in Resources */,
 				6C0668D22184E60600894EA9 /* ScanningView.xib in Resources */,
