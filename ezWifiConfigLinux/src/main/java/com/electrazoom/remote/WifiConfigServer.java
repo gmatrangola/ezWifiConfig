@@ -29,6 +29,7 @@ import org.freedesktop.dbus.Path;
 import org.freedesktop.dbus.UInt32;
 import org.freedesktop.dbus.Variant;
 import org.freedesktop.dbus.exceptions.DBusException;
+import org.freedesktop.dbus.exceptions.DBusExecutionException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -53,10 +54,14 @@ public class WifiConfigServer implements WifiSetupRpc {
                 WifiSetupRpcServer rpc = new WifiSetupRpcServer(server);
                 rpc.startService();
             }
-        } catch (DBusException e) {
+        } catch (DBusExecutionException | DBusException e) {
             LOG.error("Error starting server", e);
+            server.shutdown();
+            System.exit(100);
         } catch (InterruptedException e) {
             LOG.info("Stopped", e);
+            server.shutdown();
+            System.exit(101);
         }
     }
 

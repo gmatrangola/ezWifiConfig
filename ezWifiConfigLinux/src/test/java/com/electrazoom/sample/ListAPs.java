@@ -20,6 +20,7 @@ public class ListAPs {
         new ListAPs();
     }
 
+
     public ListAPs() throws DBusException {
         networkManager = new NetworkManagerHelper();
 

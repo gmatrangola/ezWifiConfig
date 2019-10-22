@@ -28,7 +28,7 @@ protobuf {
         // This doesn't work on Raspberry Pi because there is no protoc compiled for arm in mavencentral.
         //artifact = 'com.google.protobuf:protoc:3.5.1-1'
         // may need to specify path if protoc isn't in the usual place.
-        path = '/usr/local/bin/protoc'
+        path = '/usr/bin/protoc'
     }
     plugins {
         common {

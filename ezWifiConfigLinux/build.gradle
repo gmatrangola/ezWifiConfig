@@ -1,9 +1,13 @@
+import org.redline_rpm.header.Flags
+
 buildscript {
     repositories {
         mavenCentral()
+        jcenter()
     }
     dependencies {
         classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.4'
+        classpath 'com.netflix.nebula:gradle-ospackage-plugin:7.6.2'
     }
 }
 
@@ -12,11 +16,12 @@ apply plugin: 'application'
 apply plugin: 'com.google.protobuf'
 apply plugin: 'idea'
 apply plugin: 'maven'
+apply plugin: 'nebula.deb'
 
 group 'com.electrazoom.network'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 1.8
+//sourceCompatibility = 1.8
 
 repositories {
     mavenLocal()
@@ -31,7 +36,7 @@ protobuf {
         // This doesn't work on Raspberry Pi because there is no protoc compiled for arm in mavencentral.
         // artifact = 'com.google.protobuf:protoc:3.5.1-1'
         // may need to specify path if protoc isn't in the usual place.
-        path = '/usr/local/bin/protoc'
+        path = '/usr/bin/protoc'
     }
     plugins {
         server {
@@ -102,4 +107,39 @@ task (runWifiSetupServer, dependsOn: 'classes', type: JavaExec) {
     main = 'com.ezsmartdevices.remote.WifiConfigServer'
     systemProperty "java.library.path", "/usr/lib/jni"
     classpath = sourceSets.main.runtimeClasspath
+}
+
+task ezWifiConfigDeb(dependsOn: installDist, type: Deb) {
+    group = "distribution"
+    description = 'Build Debian .deb file'
+    release '1'
+    packageName 'ezwificonfig'
+    os = LINUX
+    user = 'ezwificonfig'
+    permissionGroup = 'ezwificonfig'
+    requires('openjdk-11-jre-headless', '11.0.3+7-5', Flags.GREATER|Flags.EQUAL)
+    requires('libdbus-java', '2.8-9', Flags.GREATER|Flags.EQUAL)
+    requires('libunixsocket-java', '0.8.1-1', (Flags.GREATER|Flags.EQUAL))
+    requires('network-manager', '1.14.6-2', (Flags.GREATER|Flags.EQUAL))
+
+    into '/opt/ezWifiConfig'
+
+    from("${buildDir}/install/ezWifiConfigLinux/lib") {
+        into 'lib'
+        fileMode 0755
+    }
+
+    from("${buildDir}/install/ezWifiConfigLinux/bin") {
+        into 'bin'
+        fileMode 0755
+    }
+
+    from("${projectDir}/src/main/scripts") {
+        into 'scripts'
+        fileMode 0755
+    }
+
+    preInstallFile(new File("${projectDir}/src/main/scripts/preInstall.sh"))
+    postInstallFile(new File("${projectDir}/src/main/scripts/installService.sh"))
+    preUninstall(new File("${projectDir}/src/main/scripts/removeService.sh"))
 }

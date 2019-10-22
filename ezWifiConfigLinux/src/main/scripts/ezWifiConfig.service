@@ -1,0 +1,17 @@
+[Unit]
+Description=ezWifiConfig
+After=syslog.target
+
+[Service]
+User=ezwificonfig
+Group=ezwificonfig
+Type=simple
+ExecStart=/opt/ezWifiConfig/bin/ezWifiConfigLinux
+WorkingDirectory=/opt/ezWifiConfig
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

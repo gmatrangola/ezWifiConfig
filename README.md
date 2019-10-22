@@ -21,23 +21,45 @@ Install ProtoBLE libraries and Code Generator - See https://github.com/gmatrango
 
 ### Linux
 
-On a Raspberry Pi running Raspbian Jessi **or similar** embedded Linux development enviornment run...
+System Dependencies:
+Install NetworkManager
+```bash
+sudo apt-get install -y openjdk-11-jdk
+sudo apt-get install -y libdbus-java
+sudo apt-get install -y libsocket-java
+sudo apt-get install -y protobuf-compiler
+sudo apt-get install -y network-manager
+sudo apt purge -y openresolv dhcpd5
+```
 
-`./gradlew :ezWifiConfigAPI:install :ezWifiConfigLinux:distTar`
+On a Raspberry Pi running Raspbian Buster **or similar** embedded Linux development environment run...
 
-un-tar the ezWifiConfigLinux/build/distributions/ezWifiConfigLinux-1.0.tar someplace (like /usr/local/opt)
+
+```bash
+./gradlew :ezWifiConfigAPI:install :ezWifiConfigLinux:ezWifiConfigDeb
+sudo dpkg --install ezWifiConfigLinux/build/distributions/ezwificonfig_1.0~SNAPSHOT-1_all.deb
+```
+
+Start the service with `sudo systemctl start ezWifiConfig` or reboot
+Troubleshoot with `sudo journalctl --lines=200 -f --unit=ezWifiConfig`
+
+Installing the deb package will do the following...
+1. Create user `ezwificonfig` and group `ezwificonfig`
+1. add the ezwificonfig user to the netdev and bluetooth groups
+1. Install the binaries in `/opt/ezWifiConfig` owned by `ezwificonfig`
+1. Install a systemd service called `ezWifiConfig`
+
 
 Follow the instructions for setting up BLE on Network Manager: https://github.com/gmatrangola/ble-java
 
-Setup the Linux permissions so you don't have to run as root. Add users to groups
+For development, You can setup the Linux permissions 
 
 ```
-sudo usermod -G bluetooth -a $USER
 sudo usermod -G netdev -a $USER
 sudo usermod -G bluetooth -a $USER
 ```
 
-Add following to /etc/dbus-1/system.d/bluetooth.conf
+If necessary, sdd following to /etc/dbus-1/system.d/bluetooth.conf
 
 ```xml
   <!-- allow users of bluetooth group to communicate -->
