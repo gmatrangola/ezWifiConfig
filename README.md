@@ -1,6 +1,6 @@
 # ezWifiConfig BETA
 
-Provision Wifi for headless IoT devices using a simple Android or iOS.
+Provision Wifi for headless IoT devices using a simple app Android or iOS using BLE instead of a soft AP.
 
 ezWifiConfig uses ProtoBLE to create a connection between a Linux based IoT device without a keyboard monitor and mouse. Then the Android/iOS user can see the list of networks with signal strengths available. The user selects a Wifi network and enters the password. ezWifiConfig uses Network Manager on the Linux side to join the network.
 
@@ -22,14 +22,15 @@ Install ProtoBLE libraries and Code Generator - See https://github.com/gmatrango
 ### Linux
 
 System Dependencies:
-Install NetworkManager
 ```bash
-sudo apt-get install -y openjdk-11-jdk
-sudo apt-get install -y libdbus-java
-sudo apt-get install -y libsocket-java
-sudo apt-get install -y protobuf-compiler
-sudo apt-get install -y network-manager
-sudo apt purge -y openresolv dhcpd5
+sudo apt-get update
+sudo apt-get install -y openjdk-11-jdk libdbus-java libsocket-java protobuf-compiler network-manager
+```
+Install switch over to **NetworkManager** for wifi management
+```bash
+sudo systemctl disable dhcpcd
+sudo systemctl stop dhcpcd
+sudo apt purge -y openresolv
 ```
 
 On a Raspberry Pi running Raspbian Buster **or similar** embedded Linux development environment run...

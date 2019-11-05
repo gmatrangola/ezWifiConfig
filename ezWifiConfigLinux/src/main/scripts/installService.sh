@@ -4,7 +4,6 @@ echo Installing ezWifiConfig Service
 sudo cp /opt/ezWifiConfig/scripts/ezWifiConfig.service /etc/systemd/system/
 sudo mkdir -p /var/lib/polkit-1/localauthority/30-com.electrazoom.d
 sudo cp /opt/ezWifiConfig/scripts/com.electrazoom.ezwificonfig.pkla /var/lib/polkit-1/localauthority/30-com.electrazoom.d
-sudo mv /var/lib/polkit-1/localauthority/10-vendor.d/org.freedesktop.NetworkManager.pkla /var/lib/polkit-1/localauthority/10-vendor.d/org.freedesktop.NetworkManager.pkla.bak
 sudo systemctl daemon-reload
 sudo systemctl restart polkit
 sudo systemctl enable ezWifiConfig.service

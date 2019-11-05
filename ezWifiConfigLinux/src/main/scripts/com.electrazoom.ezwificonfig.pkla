@@ -1,4 +1,4 @@
 [Let netdev group modify system settings for network]
 Identity=unix-group:netdev
-Action=org.freedesktop.NetworkManager.settings.modify.system
+Action=org.freedesktop.NetworkManager.*
 ResultAny=yes
